@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>GSLAMOT: A Tracklet and Query Graph-based Simultaneous Locating, Mapping, and Multiple Object Tracking System</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -56,17 +56,32 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="" target="_blank">Shuo Wang</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://yongcaiwang.github.io" target="_blank">Yongcai Wang</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="" target="_blank">Zhimin Xu</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="" target="_blank">Yongyu Guo</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="" target="_blank">Wanting Li</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="" target="_blank">Zhe Huang</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="" target="_blank">Xuewei Bai</a>
+                  </span>
+                  <span class="author-block">
+                    <a href="" target="_blank">Deying Li</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Renmin University of China<br>ACM MM2024</span>
+<!--                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
@@ -83,7 +98,7 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+<!--                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,18 +106,18 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+<!--                   <span class="link-block">
+                    <a href="https://github.com/markinruc/GSLAMOT" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> -->
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
@@ -124,7 +139,7 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
@@ -137,7 +152,7 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
@@ -148,7 +163,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+           For interacting with mobile objects in unfamiliar environments, simultaneously locating, mapping, and tracking the 3D poses of multiple objects are crucially required. This paper proposes a Tracklet Graph and Query Graph-based framework, i.e., GSLAMOT, to address this challenge. GSLAMOT utilizes camera and LiDAR multimodal information as inputs and divides the representation of the dynamic scene into a semantic map for representing the static environment,  a trajectory of the ego-agent, and an online maintained Tracklet Graph (TG) for tracking and predicting the 3D poses of the detected mobile objects. A Query Graph (QG) is constructed in each frame by object detection to query and update TG. 
+  For accurate object association, a Multi-criteria Star Graph Association (MSGA) method is proposed to find matched objects between the detections in QG and the predicted tracklets in TG. Then, an Object-centric Graph Optimization (OGO) method is proposed to simultaneously optimize the TG, the semantic map,  and the agent trajectory. It triangulates the detected objects into the map to enrich the map's semantic information. We address the efficiency issues to handle the three tightly coupled tasks in parallel. Experiments are conducted on KITTI, Waymo, and an emulated Traffic Congestion dataset that highlights challenging scenarios. Experiments show that GSLAMOT enables accurate crowded object tracking while conducting SLAM accurately in challenging scenarios, demonstrating more excellent performances than the state-of-the-art methods. 
           </p>
         </div>
       </div>
@@ -201,7 +217,7 @@
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
@@ -217,12 +233,12 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
@@ -251,7 +267,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
